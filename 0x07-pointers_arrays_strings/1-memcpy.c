@@ -1,21 +1,23 @@
 #include "main.h"
 
 /**
-  * _memset - main function of the prototype
+  * _memcpy - main function prototype
   *
-  * @b: The value used to fill the memory
+  * @src: Source parameter
   *
-  * @s: Function paramater
+  * @dest: Destination parameter
   *
   * @n: Function parameter
   *
-  * Return: s
+  * Return: Copied memory
   */
-char *_memset(char *s, char b, unsigned int n)
+char *_memcpy(char *dest, char *src, unsigned int n)
 {
-unsigned int a;
+unsigned int k;
 
-for (a = 0; a < n; a++)
-s[a] = b;
-return (s);
+for (k = 0; k < n; k++)
+{
+dest[k] = src[k];
+}
+return (dest);
 }
